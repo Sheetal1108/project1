@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hostel</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Happiness<span>.</span></a>
+		<div class="menuToggle" onclick = "togglemenu();">
+			
+		</div>
+		<ul class="navigation">
+			<li><a href="#banner"  onclick = "togglemenu();">Home</a></li>
+
+			<li><a href="#services"  onclick = "togglemenu();">Services</a></li>
+
+			<li><a href="#about"  onclick = "togglemenu();">About us</a></li>
+			
+			<li><a href="#contact"  onclick = "togglemenu();">Contact</a></li>
+		</ul>
+	</header>
+<section class="banner" id="banner">
+	<div class="content">
+		<h2>Happiness girls hostel</h2>
+		<p> Hostel is that home where you learn more things feels good and do a lot of fun with friends live togather like a family...</p>
+		<a href="#" class="btn">Our facilities</a>
+	</div>
+</section>
+<section class="services" id="services">
+	<div class="title">
+		<h2 class="titletex"><span>S</span>ervices</h2>
+		<p>Following in bad company and if there is any laxity in supervision one can go wrong, and very wrong sometimes — take to drugs or indulgence into other evils as there is no mother, sister, brother, or father to take any personal care about one’s welfare. </p>
+	</div>
+		<div class="content">
+			<!-- 1 -->
+			<div class ="box">
+				<div class="imagBx">
+					<img src="bad.jpg">
+				</div>
+				<div class=" text">
+					<h3>Beds</h3>
+				</div>
+			</div>
+			<!-- 2 -->
+			<div class ="box">
+				<div class="imagBx">
+					<img src="washroom.jpg">
+				</div>
+				<div class=" text">
+					<h3>Washrooms</h3>
+				</div>
+			</div>
+			<div class ="box">
+				<div class="imagBx">
+					<img src="audi.jpg">
+				</div>
+				<div class=" text">
+					<h3>Auditorium</h3>
+				</div>
+			</div>
+			<div class ="box">
+				<div class="imagBx">
+					<img src="mess.jpg">
+				</div>
+				<div class=" text">
+					<h3>FoodArea</h3>
+				</div>
+			</div>
+			<div class ="box">
+				<div class="imagBx">
+					<img src="library.jpg">
+				</div>
+				<div class=" text">
+					<h3>Library</h3>
+				</div>
+			</div>
+			<div class ="box">
+				<div class="imagBx">
+					<img src="table.jpg">
+				</div>
+				<div class=" text">
+					<h3>Studytable</h3>
+				</div>
+			</div>
+		</div>
+		<div class="title">
+		<a href="#" class="btn">View all</a>
+	</div>
+	
+
+
+</section>
+
+<section class="about" id="about">
+	<div class="title">
+	   <div class="title white">
+		<h2 class="titletex"><span>A</span>bout Us</h2>
+		<p>The other very important training is discipline. Fixed hours and timings for everything time to leave the bed in the morning not that turning over sides while the mother cajoling to make you leave the bed or else would get late for school none to do that. A quick bath and dressing up, setting the school bag, nothing to be missed.</p>
+	</div>
+	<div class="content">
+		<div class="box">
+			<div class="imagBx">
+				<img src="ab5.jpg">
+			</div>
+			<div class="text">
+				<p>It is a lesson learned in developing a taste for all kinds of food a disciplining of the palate, which does not happen in the home. There the mother keeps caring about what he or she likes more and whatnot</p>
+			
+			<h3>Directore</h3>
+		</div>
+	</div>
+		<div class="box">
+			<div class="imagBx">
+				<img src="ab4.jpg">
+			</div>
+			<div class="text">
+				<p>A student learns in a hostel to live in an independent way. She depends on her parents at home even in small matters. .</p>
+			
+			<h3>Managment</h3>
+		</div>
+	</div>
+		<div class="box">
+			<div class="imagBx">
+				<img src="ab1.jpg">
+			</div>
+			<div class="text">
+				<p>Mutual cooperation, sympathy, discipline, and love are qualities that you can develop during your hostel life.Life in a hostel makes a student self-dependent. It makes him smart, active, and disciplined.
+
+</p>
+			
+			<h3>Managment</h3>
+		</div>
+	</div>
+	</div>
+</section>
+
+
+<section class="contact" id="contact">
+	<div class="title">
+		<h2 class="titletex"><span>C</span>ontact Us</h2>
+		<p>The most important lesson that hostel life gives is the trailing incorporate living together. It is a lesson in Social living; in Sociability; in learning the spirit of adjustment and accommodation. This is a great lesson that goes a long way in later life on the Social front.Hostel life thus has many things to learn, but there are, sometimes, many things that this life gives an occasion to, which can spoil one’s life.</p>
+	</div>
+	<div class="contactForm">
+		<h3>Send Massage</h3>
+		<div class= "inputeBox">
+			<input type="text" name="" placeholder="name">
+		</div>
+		<div class= "inputeBox">
+			<input type="text" name="" placeholder="email">
+		</div>
+		
+		
+		<button onclick="show()" class="button">Send</button>
+		<script>
+			function show(){
+				    window.alert("your form submited THANK YOU!!")
+			}
+		</script>
+</section>
+<div class="copyrightText">
+	<p>@Copyright 2022 <a href="#">My Project</a> All Right Reserved</p>
+
+
+<script type="text/javascript">
+	
+	window.addEventListener('scroll',function(){
+		const header= document.querySelector('header');
+		header.classList("sticky",window.scrollY > 0);
+	});
+	function togglemenu(){
+		const menuToggle = document.querySelector('.menuToggle');
+		const navigation = document.querySelector('.navigation');
+		menuToggle.classList.toggle('active');
+		navigation.classList.toggle('active');
+	}
+</script>
+</body>
+</html>
